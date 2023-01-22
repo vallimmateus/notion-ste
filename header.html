@@ -5,6 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<style>
+			body {
+				padding: 0;
+				margin: 0;
+			}
 			div {
 				background: url(assets/Header-bg.jpg) no-repeat;
 				background-size: cover;
@@ -12,12 +16,14 @@
 					"Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif,
 					"Segoe UI Emoji", "Segoe UI Symbol";
 				border-radius: 12px;
+				margin: 0;
 				padding: 20px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
 				flex-direction: column;
 				color: #70697a;
+				position: relative;
 			}
 			div * {
 				margin: 5px auto;
@@ -30,12 +36,26 @@
 				font-weight: 600;
 				font-size: 1.4em;
 			}
+			iframe {
+				position: absolute;
+				right: 10px;
+				top: 50%;
+				transform: translateY(-50%);
+				margin: 0;
+			}
 		</style>
 	</head>
 	<body>
 		<div>
 			<h1>Oii, chulé</h1>
 			<p>Primeiro, uma boa viagem pra você!!!</p>
+			<iframe
+				src="https://open.spotify.com/embed/playlist/5IJQTWLsfV3ULOo5KEhhdB?utm_source=generator&theme=1"
+				scrolling="no"
+				frameborder="no"
+				width="300"
+				height="80"
+			></iframe>
 		</div>
 	</body>
 </html>
